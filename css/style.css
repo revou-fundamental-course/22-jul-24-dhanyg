@@ -27,6 +27,11 @@ nav a {
 
 nav a:hover {
     background-color: pink;
+    border-radius: 12px;
+}
+
+hr {
+    border: 1px solid #efefef;
 }
 
 header {
@@ -73,7 +78,7 @@ header p {
 }
 
 #slider figcaption {
-    padding: 13px;
+    padding: 12px;
 }
 
 .caption-profile {
@@ -84,6 +89,14 @@ header p {
 
 .caption-profile img {
     border-radius: 100%;
+}
+
+.caption-profile-name {
+    font-weight: 600;
+}
+
+.caption-profile-info {
+    color: #555;
 }
 
 .benefits h3 {
@@ -126,11 +139,13 @@ header p {
 }
 
 .form-input-wrapper label,
-.form-input-wrapper input {
+.form-input-wrapper input,
+.form-input-wrapper select {
     display: block;
 }
 
-.form-input-wrapper input {
+.form-input-wrapper input,
+.form-input-wrapper select {
     padding: 12px 18px;
     width: 100%;
 }
@@ -145,6 +160,13 @@ header p {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+form .error {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
 }
 
 #package {
@@ -209,4 +231,76 @@ footer {
     font-size: 24px;
     margin-bottom: 12px;
     font-weight: 600;
+}
+
+@media screen and (min-width: 641px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    #slider {
+        display: flex;
+        justify-content: space-between;
+        padding: 36px;
+        column-gap: 8px;
+    }
+
+    #slider article,
+    #slider figcapture {
+        padding: 0;
+    }
+
+    #slider figure,
+    #contact {
+        border-radius: 10px;
+    }
+
+    #slider figure {
+        overflow: hidden;
+    }
+
+    #slider aside {
+        align-self: self-start;
+    }
+
+    .caption-profile div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .package-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 56px;
+        padding: 36px;
+    }
+
+    .package-wrapper article {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    .package-info {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    #closing {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    footer {
+        padding: 36px;
+    }
+
+    .footer-brand {
+        margin-bottom: 36px;
+    }
 }
