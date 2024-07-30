@@ -150,8 +150,8 @@ header p {
     width: 100%;
 }
 
-.form-input-wrapper button {
-    display: block;
+.form-input-wrapper a {
+    display: inline-block;
     width: 100%;
     padding: 18px 12px;
     text-align: center;
@@ -160,6 +160,8 @@ header p {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bolder;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 form .error {
@@ -206,12 +208,15 @@ form .error {
     margin-top: 36px;
 }
 
-#closing button {
+#closing a {
     padding: 12px 18px;
     border: none;
     background-color: #222222;
     color: white;
     margin-bottom: 24px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
 }
 
 footer {
@@ -270,6 +275,10 @@ footer {
     .caption-profile div {
         display: flex;
         flex-direction: column;
+    }
+
+    .benefits-info {
+        align-items: center;
     }
 
     .package-wrapper {
