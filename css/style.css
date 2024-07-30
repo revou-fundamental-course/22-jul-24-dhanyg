@@ -18,17 +18,29 @@ nav {
     gap: 12px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 12px 18px;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
 header {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 36px;
     padding: 12px;
 }
 
-header h1 {
+h2 {
     font-weight: bold;
     font-size: 28px;
     margin-top: 26px;
     margin-bottom: 18px;
+    text-align: center;
 }
 
 header p {
@@ -56,6 +68,8 @@ header p {
 #slider figure img {
     max-width: 100%;
     height: auto;
+    text-align: center;
+    object-position: center;
 }
 
 #slider figcaption {
@@ -131,4 +145,68 @@ header p {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+#package {
+    background-color: #eeeeee;
+}
+
+#package h2 {
+    padding-top: 18px;
+}
+
+.package-wrapper {
+    background-color: #ffffff;
+    padding: 18px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.package-icon span {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: pink;
+    border-radius: 100%;
+}
+
+.package-info {
+    margin: 12px 0;
+}
+
+#closing {
+    text-align: center;
+    padding: 12px;
+}
+
+#closing div {
+    margin-top: 36px;
+}
+
+#closing button {
+    padding: 12px 18px;
+    border: none;
+    background-color: #222222;
+    color: white;
+    margin-bottom: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 24px 12px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
