@@ -26,14 +26,40 @@
             <div id="slider">
                 <article>
                     <figure>
-                        <img src="https://picsum.photos/768" alt="Image 1">
+                        <img src="https://picsum.photos/id/120/768/432" alt="Image 1">
                         <figcaption>
                             <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
                             <div class="caption-profile">
-                                <img src="https://picsum.photos/50" alt="Caption Profile">
+                                <img src="https://picsum.photos/id/20/50" alt="Caption Profile">
                                 <div>
                                     <span class="caption-profile-name">Florence Hughes</span>
                                     <span class="caption-profile-info">Ibu Rumah Tangga, 28</span>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/id/121/768/432" alt="Image 2">
+                        <figcaption>
+                            <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+                            <div class="caption-profile">
+                                <img src="https://picsum.photos/id/21/50" alt="Caption Profile">
+                                <div>
+                                    <span class="caption-profile-name">Mark Manson</span>
+                                    <span class="caption-profile-info">Penulis, 32</span>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/id/122/768/432" alt="Image 3">
+                        <figcaption>
+                            <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+                            <div class="caption-profile">
+                                <img src="https://picsum.photos/id/22/50" alt="Caption Profile">
+                                <div>
+                                    <span class="caption-profile-name">Chuck Norris</span>
+                                    <span class="caption-profile-info">Aktor, 60</span>
                                 </div>
                             </div>
                         </figcaption>
@@ -61,23 +87,24 @@
                     <p>Sales akan menghubuni anda 1x24 jam setelah data kami terima.</p>
                     <form method="post" action="">
                         <div class="form-input-wrapper">
-                            <label for="">Your Name</label>
-                            <input name="name" type="text" placeholder="First and last name">
-                            <span class=""></span>
+                            <label for="name">Your Name</label>
+                            <input name="name" id="name" type="text" placeholder="First and last name" value="" />
+                            <span class="name-error"></span>
                         </div>
                         <div class="form-input-wrapper">
-                            <label for="">Email Address</label>
-                            <input name="email" type="email" placeholder="example@email.com">
-                            <span class=""></span>
+                            <label for="email">Email Address</label>
+                            <input name="email" id="email" type="email" placeholder="example@email.com" value="" />
+                            <span class="email-error"></span>
                         </div>
                         <div class="form-input-wrapper">
-                            <label for="">What are you interested in?</label>
-                            <select name="interest" id="">
+                            <label for="interes">What are you interested in?</label>
+                            <select name="interest" id="interest">
                                 <option value="" selected disabled>Select option</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
                                 <option value="option3">Option 3</option>
                             </select>
+                            <span class="interest-error"></span>
                         </div>
                         <div class="form-input-wrapper">
                             <a href="#" id="btnSubmit">Send</a>
